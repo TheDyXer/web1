@@ -28,3 +28,40 @@ button:hover {
     color: #333;
     box-shadow: 0 8px 24px rgba(50, 20, 20, 0.18);
     transform: ranslateY(4px) scale(1.03); }
+.font1 {
+font-family: Roboto Condensed;
+font-weight: 700;
+font-size: 38px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.font2 {
+font-family: Roboto;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+}
+.font3 {font-family: Roboto;
+font-weight: 700;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: 0%;
+}
+.font4 {font-family: Roboto;
+font-weight: 700;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.font5 {font-family: Roboto;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;}
+.font6{
+font-family: Roboto;
+font-weight: 700;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: 0%;}
