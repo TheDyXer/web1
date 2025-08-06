@@ -65,3 +65,19 @@ font-weight: 700;
 font-size: 32px;
 line-height: 42px;
 letter-spacing: 0%;}
+.dasfont1 {font-family: Roboto;
+font-weight: 700;
+font-size: 32px;
+line-height: 26px;
+text-align: center;}
+.allesfont1 {font-family: Roboto;
+font-weight: 700;
+font-size: 22px;
+line-height: 100%;
+text-align: center;}
+.allesfont2 {font-family: Roboto;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+}
