@@ -45,3 +45,27 @@ button:hover {
     margin: 20px 0 20px 0;      /* Top, right, bottom, left margin: left is 0 */
 }
 
+.hero {
+  /* height set to viewport height */
+  width: 1938px;
+height: 679px;
+ position: relative;
+  background-image: url('../img/ember.png'); /* replace with your image path */
+  background-position: center;     /* center the image horizontally & vertically */
+  background-repeat: no-repeat;    /* don’t tile the background */
+  background-size: cover;     
+  display: flex; 
+      /* scale image to fill the container:contentReference[oaicite:2]{index=2} */
+}
+
+
+
+.hero-content {
+  position: relative;    /* ensures text sits above the overlay */
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
