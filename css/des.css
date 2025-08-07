@@ -49,7 +49,7 @@ button:hover {
   /* height set to viewport height */
   width: 1938px;
 height: 679px;
- position: relative;
+
   background-image: url('../img/ember.png'); /* replace with your image path */
   background-position: center;     /* center the image horizontally & vertically */
   background-repeat: no-repeat;    /* don’t tile the background */
@@ -61,7 +61,7 @@ height: 679px;
 
 
 .hero-content {
-  position: relative;    /* ensures text sits above the overlay */
+     /* ensures text sits above the overlay */
   z-index: 1;
   color: #fff;
   text-align: center;
