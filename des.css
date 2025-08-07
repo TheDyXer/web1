@@ -5,7 +5,9 @@
     justify-content: center;  
     min-height: 40vh;         
 }
-
+body {
+    margin: 0;
+    padding: 0;}
 
 button {
     background-color: darkred; 
@@ -87,6 +89,10 @@ text-align: center;}
     padding: 16px 32px;
     background: red;
     box-shadow: 0 2px 8px rgba(50, 20, 20, 0.08);
+    height: 93px;
+    min-height: 93px;
+    width: 1920px;
+    opacity: 1;
 }
 
 .headertop .logo {
@@ -111,8 +117,4 @@ text-align: center;}
     cursor: pointer;
     color: white;
     transition: color 0.2s;
-}
-
-.headertop ul li:hover {
-    color: darkerwhite;
 }
