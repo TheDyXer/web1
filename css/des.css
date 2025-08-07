@@ -1,0 +1,35 @@
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    justify-content: center;  
+    min-height: 40vh;         
+}
+/*ne töröld, border fix*/
+body {
+    margin: 0;
+    padding: 0;
+}
+button {
+    background-color: darkred; 
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 
+        background 0.2s,
+        box-shadow 0.2s,
+        transform 0.15s;
+    box-shadow: 0 2px 8px rgba(50, 20, 20, 0.08);
+    font-family: 'Roboto', 'Roboto Condensed', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: red ; 
+    color: #333;
+    box-shadow: 0 8px 24px rgba(50, 20, 20, 0.18);
+    transform: ranslateY(4px) scale(1.03); }
+
+
