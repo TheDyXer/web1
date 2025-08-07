@@ -52,8 +52,7 @@ letter-spacing: 0%;
 font-weight: 700;
 font-size: 22px;
 line-height: 100%;
-letter-spacing: 0%;
-}
+letter-spacing: 0%;}
 .font5 {font-family: Roboto;
 font-weight: 300;
 font-size: 16px;
@@ -79,5 +78,41 @@ text-align: center;}
 font-weight: 300;
 font-size: 16px;
 line-height: 24px;
-text-align: center;
+text-align: center;}
+.headertop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background: red;
+    box-shadow: 0 2px 8px rgba(50, 20, 20, 0.08);
+}
+
+.headertop .logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.headertop ul {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headertop ul li {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s;
+}
+
+.headertop ul li:hover {
+    color: darkerwhite;
 }
