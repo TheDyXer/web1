@@ -5,17 +5,32 @@
     justify-content: center;  
     min-height: 40vh;         
 }
+/* Reset body margin and padding */
 body {
     margin: 0;
     padding: 0;
-  
-    
 }
 
+/* Header Styles */
 .headertop {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background: red;
+    box-shadow: 0 2px 8px rgba(50, 20, 20, 0.08);
     height: 93px;
     background-color: rgba(181, 0, 20, 1);
+    min-height: 93px;
+    width: 100%; /* Use 100% width */
+    opacity: 1;
+    position: relative; /* Add relative positioning */
+    z-index: 2; /* Ensure header is above other elements */
+}
+
+.headertop .logo {
     display: flex;
     border-bottom: 2px solid black;
     color: white;
@@ -23,16 +38,25 @@ body {
     align-items: center;
     font-weight: 700;
     font-size: 16px;
+    gap: 24px;
 }
 
 .headertop ul {
     display: flex;
     flex-direction: row;
+    gap: 18px;
     list-style: none;
-    padding: 0;
     margin: 0;
-    align-items: center;
-    gap: 40px;
+    padding: 0;
+}
+
+.headertop ul li {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s;
 }
 
 .headerbottom {
@@ -43,6 +67,8 @@ body {
     justify-content: right;
     align-items: center;
     color: white;
+    position: relative; /* Add relative positioning */
+    z-index: 2; /* Ensure headerbottom is above other elements */
 }
 
 .headertop ul li:first-child {
@@ -135,7 +161,12 @@ font-weight: 300;
 font-size: 16px;
 line-height: 24px;
 text-align: center;}
-.headertop {
+.frontblur {
+    position: absolute;
+    left: 0;
+    top: 287px;
+    width: 629px;
+    height: 348px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -146,6 +177,11 @@ text-align: center;}
     height: 93px;
     min-height: 93px;
     width: 1920px;
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* horizontal center */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 10;
     opacity: 1;
 }
 
