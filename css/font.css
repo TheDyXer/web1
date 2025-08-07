@@ -1,3 +1,11 @@
+body {
+/*need: white color*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    
+}
+
 .font1 {
 font-family: Roboto Condensed;
 font-weight: 700;
@@ -56,3 +64,38 @@ font-weight: 700;
 font-size: 32px;
 line-height: 42px;
 letter-spacing: 0%; }
+.fontcus1 {font-family: Roboto;
+font-weight: 700;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: 0%;
+}
+.fonturn {font-family: Roboto;
+font-weight: 700;
+font-size: 22px;
+
+line-height: 20px;
+letter-spacing: 0%;
+width: 402;
+height: 42;
+top: 3573px;
+left: 1082px;
+opacity: 1;
+
+}
+.fontodion {
+    width: 652;
+height: 333;
+top: 2409px;
+left: 634px;
+
+opacity: 1;
+font-family: Roboto;
+font-weight: 300;
+font-size: 16px;
+
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+
+}
