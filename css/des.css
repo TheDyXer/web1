@@ -33,6 +33,13 @@ button:hover {
     box-shadow: 0 8px 24px rgba(50, 20, 20, 0.18);
     transform: ranslateY(4px) scale(1.03); }
 .box {
+    width: 629px;
+    height: 348px;
+    position: absolute;
+    top: 287px;
+    left: 0;
+    opacity: 1;
+    transform: rotate(0deg);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -41,14 +48,7 @@ button:hover {
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-    width: 629px;
-    height: 348px;
-    position: absolute;
-    top: 287px;
-    left: 0;
-    opacity: 1;
-    transform: rotate(0deg);
-    margin: 20px 0 20px 0;      /* Top, right, bottom, left margin: left is 0 */
+    margin: 0;
 }
 
 .hero {
@@ -79,4 +79,25 @@ height: 679px;
 .headerbottom,
 .headerbottom * {
     color: #fff !important;
+}
+.image-row {
+  display: flex;               /* Turns container into a flex layout */
+  gap: 10px;                   /* Adds space between images */
+  justify-content: center;     /* Horizontally centers the images */
+  align-items: center;         /* Vertically aligns them if heights vary */
+}
+
+.image-row img {
+  max-width: 100%;
+  height: auto;                /* Keeps images responsive */
+}
+.side2 {
+    background: #000;
+    width: 100%;
+    min-height: 100px; 
+}
+.black-bg-section {
+    background: #000;
+    width: 100%;
+    padding: 40px 0;
 }
