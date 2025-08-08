@@ -63,7 +63,10 @@ height: 679px;
   display: flex; 
       /* scale image to fill the container:contentReference[oaicite:2]{index=2} */
 }
+.hero .box {
+  align-items: flex-end
 
+} 
 
 
 .hero-content {
@@ -139,4 +142,51 @@ height: 679px;
   .black-bg-section .box1 .button-row {
     flex-wrap: wrap;
   }
+}
+/* Grillkurs red split — 50/50, right side is the image */
+.grill-section{
+  background:#9f2323;
+  color:#fff;
+  display:grid;
+  grid-template-columns: 1fr 1fr;   /* left 50% | right 50% */
+  align-items: stretch;              /* both halves same height */
+  min-height: 642px;                 /* match your mock height (tweak if needed) */
+  gap: 40px;
+  padding: 0;
+}
+
+/* left half: center the text vertically, nudge in from edges */
+.grill-section .box2{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  max-width:520px;
+  padding: 0 clamp(24px, 8vw, 96px);
+}
+
+/* white pill button like Figma */
+.grill-section .box2 button{
+  background:#fff !important;
+  color:#9f2323 !important;
+  border-radius:9999px;
+  padding:10px 28px;
+}
+
+/* right half: image fills exactly 50% */
+.grill-section .grill-img{ width:100%; height:100%; }
+.grill-section .grill-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;   /* crops to fill the half cleanly */
+  display:block;
+}
+
+/* mobile: stack */
+@media (max-width:900px){
+  .grill-section{
+    grid-template-columns:1fr;
+    min-height:auto;
+  }
+  .grill-section .box2{ max-width:none; padding:24px; }
+  .grill-section .grill-img img{ height:auto; }
 }
