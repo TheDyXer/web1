@@ -1,3 +1,5 @@
-fix color top
+
 svg all icons
-https://www.figma.com/design/Uc06Lkn6r1TA9yxTJAnuv9/Brath-Praksa?node-id=1-6&t=fRvHSH2pDoHBqocx-0
+
+
+fix size 2. and 3. part 
