@@ -1,5 +1,5 @@
 body {
-/*need: white color*/
+
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
@@ -50,12 +50,25 @@ letter-spacing: 0%;}
 font-weight: 700;
 font-size: 32px;
 line-height: 26px;
-text-align: center;}
+text-align: center;
+width: 208;
+height: 26;
+top: 2276px;
+left: 856px;
+opacity: 1;
+}
 .allesfont1 {font-family: Roboto;
 font-weight: 700;
 font-size: 22px;
 line-height: 100%;
-text-align: center;}
+text-align: center;
+width: 421;
+height: 26;
+top: 2318px;
+left: 750px;
+
+opacity: 1;
+}
 .allesfont2 {font-family: Roboto;
 font-weight: 300;
 font-size: 16px;
