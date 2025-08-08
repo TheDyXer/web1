@@ -96,8 +96,47 @@ height: 679px;
     width: 100%;
     min-height: 100px; 
 }
+/* DELETE: old layout */
 .black-bg-section {
-    background: #000;
-    width: 100%;
-    padding: 40px 0;
+  background: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* ← this version */
+  align-items: center;
+  padding: 60px 0;
+  gap: 40px;
+}
+.black-bg-section .box1 {
+  padding-left: 8%;
+  max-width: 500px;
+}
+.black-bg-section .font3,
+.black-bg-section .font4 {
+  margin: 0 0 10px 0;
+}
+.black-bg-section .font5 {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.black-bg-section .box1 .button-row {
+  display: flex;
+  gap: 12px;
+}
+.black-bg-section .box1 .button-row button {
+  white-space: nowrap;
+}
+
+/* DELETE: the older breakpoint tied to that layout */
+@media (max-width: 900px) {
+  .black-bg-section {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+  .black-bg-section .box1 {
+    padding-left: 0;
+    max-width: none;
+  }
+  .black-bg-section .box1 .button-row {
+    flex-wrap: wrap;
+  }
 }
