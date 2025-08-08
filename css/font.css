@@ -1,9 +1,10 @@
 /* ---------- Tokens & global typography ---------- */
-:root{
+:root {
   --ff-roboto: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  --ff-cond: "Roboto Condensed", "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --ff-cond: "Roboto Condensed", "Roboto", system-ui, -apple-system, "Segoe UI",
+    Arial, sans-serif;
 
-  --fs-xs: clamp(14px, .9vw, 16px);
+  --fs-xs: clamp(14px, 0.9vw, 16px);
   --fs-sub: clamp(18px, 1.5vw, 22px);
   --fs-title: clamp(28px, 2.2vw, 32px);
   --fs-lg: clamp(28px, 2.6vw, 38px);
@@ -16,8 +17,12 @@
   --c-text: #111;
 }
 
-html, body { height: 100%; }
-body{
+html,
+body {
+  height: 100%;
+}
+
+body {
   margin: 0;
   padding: 0;
   color: var(--c-text);
@@ -26,20 +31,106 @@ body{
 }
 
 /* Utilities */
-.text-center{ text-align:center; }
-.text-white{ color: var(--c-white); }
-.fw-300{ font-weight:300; }
-.fw-700{ font-weight:700; }
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: var(--c-white);
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
 
 /* Legacy class mapping (keeps existing HTML working) */
-.font1{ font-family: var(--ff-cond); font-weight:700; font-size:var(--fs-lg); line-height:var(--lh-tight); }
-.font2{ font-family: var(--ff-roboto); font-weight:300; font-size:var(--fs-xs); line-height:var(--lh-normal); }
-.font3{ font-family: var(--ff-roboto); font-weight:700; font-size:var(--fs-title); line-height:var(--lh-loose); color:var(--c-white); }
-.font4{ font-family: var(--ff-roboto); font-weight:700; font-size:var(--fs-sub); line-height:1; color:var(--c-white); }
-.font5{ font-family: var(--ff-roboto); font-weight:300; font-size:var(--fs-xs); line-height:var(--lh-normal); color:var(--c-white); }
-.font6, .bufont, .fontcus1{ font-family: var(--ff-roboto); font-weight:700; font-size:var(--fs-title); line-height:var(--lh-loose); }
-.dasfont1{ font-family: var(--ff-roboto); font-weight:700; font-size:var(--fs-title); line-height:1.2; text-align:center; }
-.allesfont1{ font-family: var(--ff-roboto); font-weight:700; font-size:var(--fs-sub); line-height:1; text-align:center; }
-.allesfont2{ font-family: var(--ff-roboto); font-weight:300; font-size:var(--fs-xs); line-height:var(--lh-normal); text-align:center; }
-.fonturn{ font-family: var(--ff-roboto); font-weight:700; font-size:var(--fs-sub); line-height:1.2; }
-.fontodion{ font-family: var(--ff-roboto); font-weight:300; font-size:var(--fs-xs); line-height:var(--lh-normal); letter-spacing:0; text-align:center; }
+.font1 {
+  font-family: var(--ff-cond);
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-tight);
+}
+
+.font2 {
+  font-family: var(--ff-roboto);
+  font-weight: 300;
+  font-size: var(--fs-xs);
+  line-height: var(--lh-normal);
+}
+
+.font3 {
+  font-family: var(--ff-roboto);
+  font-weight: 700;
+  font-size: var(--fs-title);
+  line-height: var(--lh-loose);
+  color: var(--c-white);
+}
+
+.font4 {
+  font-family: var(--ff-roboto);
+  font-weight: 700;
+  font-size: var(--fs-sub);
+  line-height: 1;
+  color: var(--c-white);
+}
+
+.font5 {
+  font-family: var(--ff-roboto);
+  font-weight: 300;
+  font-size: var(--fs-xs);
+  line-height: var(--lh-normal);
+  color: var(--c-white);
+}
+
+.font6,
+.bufont,
+.fontcus1 {
+  font-family: var(--ff-roboto);
+  font-weight: 700;
+  font-size: var(--fs-title);
+  line-height: var(--lh-loose);
+}
+
+.dasfont1 {
+  font-family: var(--ff-roboto);
+  font-weight: 700;
+  font-size: var(--fs-title);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.allesfont1 {
+  font-family: var(--ff-roboto);
+  font-weight: 700;
+  font-size: var(--fs-sub);
+  line-height: 1;
+  text-align: center;
+}
+
+.allesfont2 {
+  font-family: var(--ff-roboto);
+  font-weight: 300;
+  font-size: var(--fs-xs);
+  line-height: var(--lh-normal);
+  text-align: center;
+}
+
+.fonturn {
+  font-family: var(--ff-roboto);
+  font-weight: 700;
+  font-size: var(--fs-sub);
+  line-height: 1.2;
+}
+
+.fontodion {
+  font-family: var(--ff-roboto);
+  font-weight: 300;
+  font-size: var(--fs-xs);
+  line-height: var(--lh-normal);
+  letter-spacing: 0;
+  text-align: center;
+}
