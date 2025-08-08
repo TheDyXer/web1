@@ -1,195 +1,92 @@
-.center-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;      
-    justify-content: center;  
-    min-height: 40vh;         
+/* ---------- Base reset for layout-only file ---------- */
+*, *::before, *::after{ box-sizing: border-box; }
+.sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+/* ---------- Header / Nav ---------- */
+.section{ padding: clamp(24px, 4vw, 48px); }
+.nav{ display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+.nav__logo{ display:flex; align-items:center; gap:.5rem; }
+.nav__list{ display:flex; gap:1rem; list-style:none; padding:0; margin:0; }
+.nav__link{ color:inherit; text-decoration:none; }
+.nav__link:focus-visible, .nav__link:hover{ text-decoration:underline; }
+.header__hours{ display:flex; align-items:center; gap:.5rem; }
+
+/* ---------- Buttons ---------- */
+button,.btn{
+  background-color: darkred;
+  color: var(--c-white);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s, box-shadow .2s, transform .15s;
+  box-shadow: 0 2px 8px rgba(50, 20, 20, 0.08);
+  font-family: inherit;
 }
-.box3 {
-background: black;
-color: white;
-}
-/*ne töröld, border fix*/
-body {
-    margin: 0;
-    padding: 0;
-    
-}
-button {
-    background-color: darkred; 
-    color: #fff;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 
-        background 0.2s,
-        box-shadow 0.2s,
-        transform 0.15s;
-    box-shadow: 0 2px 8px rgba(50, 20, 20, 0.08);
-    font-family: 'Roboto', 'Roboto Condensed', Arial, sans-serif;
+button:hover,.btn:hover{
+  background-color: red;
+  color: #111;
+  box-shadow: 0 8px 24px rgba(50, 20, 20, 0.18);
+  transform: translateY(4px) scale(1.03);
 }
 
-button:hover {
-    background-color: red ; 
-    color: #333;
-    box-shadow: 0 8px 24px rgba(50, 20, 20, 0.18);
-    transform: ranslateY(4px) scale(1.03); }
-.box {
-    width: 629px;
-    height: 348px;
-    position: absolute;
-    top: 287px;
-    left: 0;
-    opacity: 1;
-    transform: rotate(0deg);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: #0000004D;      /* 30% opacity black */
-    color: #fff;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-    margin: 0;
-}
-
-.hero {
-  
-  width: 1938px;
-height: 679px;
-
-  background-image: url('../img/ember.png'); 
-  background-position: center;     
-  background-repeat: no-repeat;   
-  background-size: cover;     
-  display: flex; 
-      
-}
+/* ---------- HERO ---------- */
+.hero{ display: flex;; min-height:min(80vh, 700px); padding: clamp(24px, 6vw, 64px); background:center/cover no-repeat url('../img/ember.png'); }
+.hero::after{ content:""; position:absolute; inset:0; background:rgba(0,0,0,.25); }
 .hero .box {
-  align-items: flex-end
-
-} 
-
-
-.hero-content {
-    
-  z-index: 1;
-  color: #fff;
-  text-align: center;
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.headerbottom,
-.headerbottom * {
-    color: #fff !important;
-}
-.image-row {
-  display: flex;               
-  gap: 10px;                   
-  justify-content: center;    
-  align-items: center;         
-}
-
-.image-row img {
-  max-width: 100%;
-  height: auto;               
-}
-.side2 {
-    background: #000;
-    width: 100%;
-    min-height: 100px; 
-}
-/* DELETE: old layout */
-.black-bg-section {
-  background: #000;
-  color: #fff;
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  align-items: center;
-  padding: 60px 0;
-  gap: 40px;
-}
-.black-bg-section .box1 {
-  padding-left: 8%;
-  max-width: 500px;
-}
-.black-bg-section .font3,
-.black-bg-section .font4 {
-  margin: 0 0 10px 0;
-}
-.black-bg-section .font5 {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-.black-bg-section .box1 .button-row {
-  display: flex;
-  gap: 12px;
-}
-.black-bg-section .box1 .button-row button {
-  white-space: nowrap;
+  align-items: flex-start !important;
+  text-align: left;
+  width: 629px;
+  height: 348px;
+  flex-direction: column;
+  border-radius: 12px;
+  position: absolute;
+  color: white; 
+  padding: 24px;
+  top: 287px;
+  opacity: 1;
+  transform: rotate(0deg);
+  background: #0000004D;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
 
 
-@media (max-width: 900px) {
-  .black-bg-section {
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
-  }
-  .black-bg-section .box1 {
-    padding-left: 0;
-    max-width: none;
-  }
-  .black-bg-section .box1 .button-row {
-    flex-wrap: wrap;
-  }
-}
-.grill-section{
-  background:#9f2323;
-  color:#fff;
-  display:grid;
-  grid-template-columns: 1fr 1fr;   
-  align-items: stretch;              
-  min-height: 642px;                 
-  gap: 40px;
-  padding: 0;
+/* ---------- Black split section (Dry Aged) ---------- */
+.black-bg-section{ background:#000; color:#fff; display:grid; gap:40px; padding: clamp(40px, 6vw, 60px) clamp(20px, 6vw, 60px); grid-template-columns:1fr; }
+.black-bg-section .box1{ max-width:560px; }
+.black-bg-section .font3,  .black-bg-section .font4{ margin:0 0 10px 0; }
+.black-bg-section .font5{ margin:0 0 20px 0; line-height:1.6; }
+.black-bg-section .box1 .button-row{ display:flex; gap:12px; flex-wrap:wrap; }
+.black-bg-section .images{ display:grid; gap:16px; }
+
+@media (min-width:900px){
+  .black-bg-section{ grid-template-columns:1fr 1fr; }
+  .black-bg-section .box1{ max-width:500px; }
 }
 
-
-.grill-section .box2{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  max-width:520px;
-  padding: 0 clamp(24px, 8vw, 96px);
-}
-
-
-.grill-section .box2 button{
-  background:#fff !important;
-  color:#9f2323 !important;
-  border-radius:9999px;
-  padding:10px 28px;
-}
-
-
+/* ---------- Grillkurs (red split) ---------- */
+.grill-section{ background:#9f2323; color:#fff; display:grid; grid-template-columns:1fr; align-items:stretch; gap:24px; }
+.grill-section .box2{ display:flex; flex-direction:column; justify-content:center; max-width:620px; padding: clamp(24px, 8vw, 96px); gap:12px; }
+.grill-section .box2 button, .grill-section .box2 .btn{ background:#fff; color:#9f2323; border-radius:9999px; padding:10px 28px; }
 .grill-section .grill-img{ width:100%; height:100%; }
-.grill-section .grill-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;  
-  display:block;
+.grill-section .grill-img img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+@media (min-width:900px){
+  .grill-section{ grid-template-columns:1fr 1fr; min-height:642px; gap:40px; }
+  .grill-section .grill-img img{ height:100%; }
 }
 
+/* ---------- Centered CTA box ---------- */
+.center-container{ display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:40vh; }
+.box3{ background:#000; color:#fff; }
 
-@media (max-width:900px){
-  .grill-section{
-    grid-template-columns:1fr;
-    min-height:auto;
-  }
-  .grill-section .box2{ max-width:none; padding:24px; }
-  .grill-section .grill-img img{ height:auto; }
-  }
+/* ---------- Misc ---------- */
+.image-row{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; align-items:center; }
+.image-row img{ max-width:100%; height:auto; }
+
+/* Motion respect */
+@media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
+.headerbottom  {
+  color: white;
+}
