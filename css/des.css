@@ -78,24 +78,22 @@ button:hover,
 .hero {
   display: flex;
   min-height: min(80vh, 700px);
-  padding: clamp(24px, 6vw, 64px);
   background: center/cover no-repeat url("../img/ember.png");
 }
 
 .hero .box {
   align-items: flex-start !important;
   text-align: center;
-  width: 629px;
-  height: 348px;
-  flex-direction: column;
+  width: 479px;
+  height: 248px;
   border-radius: 12px;
   position: absolute;
   color: white;
-  padding: 24px;
   top: 287px;
   transform: rotate(0deg);
-  background: rgba(0, 0, 0, 0.3); /* 30% darker background for the box only */
+  background: rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  align-items: center;
 }
 
 /* ---------- Black split section (Dry Aged) ---------- */
@@ -218,19 +216,19 @@ button:hover,
 .headerbottom {
   color: white;
 }
-/* replace the whole .list1 block with this */
+
+/* ---------- Grillkurs list styling ---------- */
 .list1 {
   list-style: disc;
-  margin: 0 0 16px 1.25rem; /* left indent + space below */
+  margin: 0 0 16px 1.25rem;
   padding: 0;
-  position: static; /* ensure it's in normal flow */
+  position: static;
   width: auto;
   height: auto;
   opacity: 1;
 }
-
 .list1 li {
-  margin: 8px 0; /* spacing between items */
+  margin: 8px 0;
 }
 
 /* keep the button from stretching/overlapping */
@@ -242,4 +240,50 @@ button:hover,
 }
 .grill-section .box2 button {
   align-self: flex-start;
+}
+
+/* ---------- Standalone bottom divider section ---------- */
+.divider-section {
+  background: #000;
+  padding: clamp(12px, 2vw, 20px) 0;
+}
+.divider-section .section-divider {
+  --line: rgba(255,255,255,.2);
+  --fade: rgba(255,255,255,0);
+  --badge-bg: #000;
+  --badge-ring: rgba(255,255,255,.7);
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: clamp(12px, 2vw, 24px);
+  width: 100%;
+}
+.divider-section .section-divider::before,
+.divider-section .section-divider::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--fade),
+    var(--line) 15%,
+    var(--line) 85%,
+    var(--fade)
+  );
+  transform: translateY(0.5px);
+}
+.divider-section .section-divider__badge {
+  display: grid;
+  place-items: center;
+  width: clamp(40px, 5vw, 56px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--badge-bg);
+  border: 1px dotted var(--badge-ring);
+}
+.divider-section .section-divider__badge img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
