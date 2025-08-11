@@ -81,15 +81,10 @@ button:hover,
   padding: clamp(24px, 6vw, 64px);
   background: center/cover no-repeat url("../img/ember.png");
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25);
-}
+
 .hero .box {
   align-items: flex-start !important;
-  text-align: left;
+  text-align: center;
   width: 629px;
   height: 348px;
   flex-direction: column;
@@ -98,9 +93,8 @@ button:hover,
   color: white;
   padding: 24px;
   top: 287px;
-  opacity: 1;
   transform: rotate(0deg);
-  background: #0000004d;
+  background: rgba(0, 0, 0, 0.3); /* 30% darker background for the box only */
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
 }
 
@@ -223,4 +217,29 @@ button:hover,
 }
 .headerbottom {
   color: white;
+}
+/* replace the whole .list1 block with this */
+.list1 {
+  list-style: disc;
+  margin: 0 0 16px 1.25rem; /* left indent + space below */
+  padding: 0;
+  position: static; /* ensure it's in normal flow */
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+
+.list1 li {
+  margin: 8px 0; /* spacing between items */
+}
+
+/* keep the button from stretching/overlapping */
+.grill-section .box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+.grill-section .box2 button {
+  align-self: flex-start;
 }
