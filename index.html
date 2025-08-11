@@ -1,140 +1,331 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Brath 
-    </title>
-    <meta name="description" content="
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brath</title>
+    <meta
+      name="description"
+      content="
 Heiko Brath Metzgermeister
-
 Deutsches Ipsum Dolor deserunt
 dissentias Grimms Märchen et. Tollit
 argumentum ius an. Pfannkuchen
 lobortis elaboraret per ne, nam Aperol
-Spritz probatus pertinax.
-">
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <link rel="stylesheet" href="css/des.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/works.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
-</head>
-
-<body>
+Spritz probatus pertinax."
+    />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/des.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/works.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="headertop">
-            <ul>
-                <li id="logo"><img src="img/logo.svg" alt="Brath" width="177px" height="177px"></li>
-                <li href="#">Die Metzgerei</li>
-                <li href="#">Dry Aged</li>
-                <li href="#">Fleischversand</li>
-                <li href="#">Events/Kurse</li>
-                <li href="#">Partyservice</li>
-                <li href="#">Tagesessen</li>
-                <li href="#">Impressum</li>
-                <li href="#">Kontakt</li>
-                <li href="#"><img src="img/pdf.svg" alt="Pdf" width="24px" height="28px">download</li>
-            </ul>
+      <div class="headertop">
+        <ul>
+          <li id="logo">
+            <img src="img/logo.svg" alt="Brath" width="177px" height="177px" />
+          </li>
+          <li href="#">Die Metzgerei</li>
+          <li href="#">Dry Aged</li>
+          <li href="#">Fleischversand</li>
+          <li href="#">Events/Kurse</li>
+          <li href="#">Partyservice</li>
+          <li href="#">Tagesessen</li>
+          <li href="#">Impressum</li>
+          <li href="#">Kontakt</li>
+          <li href="#">
+            <img
+              src="img/pdf.svg"
+              alt="Pdf"
+              width="24px"
+              height="28px"
+            />download
+          </li>
+        </ul>
+      </div>
+      <div class="headerbottom">
+        <div id="time">
+          <img
+            src="img/clock.svg"
+            alt="Clock"
+            width="15px"
+            height="15px"
+          /><span style="font-weight: 700">Opentime:</span>
+          <span id="bbc"
+            >Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
+          </span>
         </div>
-        <div class="headerbottom">
-            <div id="time">
-                <img src="img/clock.svg" alt="Clock" width="15px" height="15px"><span
-                    style="font-weight: 700;">Opentime:</span> <span id="bbc">Di. - Fr.: 07:00-13:00 und 15:00-18:30.
-                    Sa.: 07:30 - 12:30 </span>
-            </div>
-        </div>
+      </div>
     </header>
     <section class="hero">
-        <div class="box">
-            <h1 class="font1">Heiko Brath Metzgermeister</h1>
-            <p class="font2">Deutsches Ipsum Dolor deserunt<br> dissentias Grimms Märchen et. Tollit<br> argumentum ius
-                an.
-                Pfannkuchen<br>
-                lobortis
-                elaboraret per ne, nam Aperol<br> Spritz probatus pertinax.</p>
-        </div>
+      <div class="box">
+        <h1 class="font1">Heiko Brath Metzgermeister</h1>
+        <p class="font2">
+          Deutsches Ipsum Dolor deserunt<br />
+          dissentias Grimms Märchen et. Tollit<br />
+          argumentum ius an. Pfannkuchen<br />
+          lobortis elaboraret per ne, nam Aperol<br />
+          Spritz probatus pertinax.
+        </p>
+      </div>
+      <div class="hero__controls" aria-label="Bildkarussell Steuerung">
+        <button
+          class="hero__btn hero__btn--prev"
+          aria-label="Vorheriges Bild"
+          type="button"
+        >
+          ❮
+        </button>
+        <div class="hero__dots" role="tablist" aria-label="Slides"></div>
+        <button
+          class="hero__btn hero__btn--next"
+          aria-label="Nächstes Bild"
+          type="button"
+        >
+          ❯
+        </button>
+      </div>
     </section>
     <section class="black-bg-section">
-        <div class="box1">
-            <h2 class="font3">Dry aged</h2>
-            <p class="font4">Alte Wutz, Dry Aged</p>
-            <p class="font5">
-                Halt amet, consectetur Handtasche elit, sed do eiusmod<br>
-                tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut<br>
-                enim ad minim veniam, Turnbeutel nostrud exercitation<br>
-                ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea<br>
-                commodo consequat. Wiener Schnitzel aute irure dolor in<br>
-                reprehenderit Guten Tag mollit anim Stuttgart.<br>
-                <br>
-                id latine indoctum complectitur HugoClub Mate mea meliore<br>
-                denique nominavi id. Ohrwurm expetenda nam an, his<br>
-                ei Reise euismod assentior.
-            </p>
-            <div class="button-row">
-                <button>Dry aged</button>
-                <button>Alte Wurtz</button>
-            </div>
+      <div class="box1">
+        <h2 class="font3">Dry aged</h2>
+        <p class="font4">Alte Wutz, Dry Aged</p>
+        <p class="font5">
+          Halt amet, consectetur Handtasche elit, sed do eiusmod<br />
+          tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut<br />
+          enim ad minim veniam, Turnbeutel nostrud exercitation<br />
+          ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea<br />
+          commodo consequat. Wiener Schnitzel aute irure dolor in<br />
+          reprehenderit Guten Tag mollit anim Stuttgart.<br />
+          <br />
+          id latine indoctum complectitur HugoClub Mate mea meliore<br />
+          denique nominavi id. Ohrwurm expetenda nam an, his<br />
+          ei Reise euismod assentior.
+        </p>
+        <div class="button-row">
+          <button>Dry aged</button>
+          <button>Alte Wurtz</button>
         </div>
-        <div class="images">
-            <img src="img/foodm1.png" alt="Dry aged main" class="img-large">
-            <img src="img/foodm2.png" alt="Dry aged secondary" class="img-short">
-        </div>
+      </div>
+      <div class="images">
+        <img src="img/foodm1.png" alt="Dry aged main" class="img-large" />
+        <img src="img/foodm2.png" alt="Dry aged secondary" class="img-short" />
+      </div>
     </section>
-
-
     <section class="grill-section">
-
-        <div class="box2">
-            <h2 class="bufont">Buchen Sie den Grillkurs jetzt</h2>
-            <ul class="list1">
-                <li>professioneller Lehrer</li>
-                <li>ausgezeichneter Metzger</li>
-                <li>1 Tag</li>
-                <li>lernen Sie die Kunst des Grillens</li>
-            </ul>
-            <button>Grillkurs</button>
-        </div>
-
-
-        <div class="grill-img">
-            <img src="img/fullfood.png" alt="Grillkurs" />
-        </div>
+      <div class="box2">
+        <h2 class="bufont">Buchen Sie den Grillkurs jetzt</h2>
+        <ul class="list1">
+          <li>professioneller Lehrer</li>
+          <li>ausgezeichneter Metzger</li>
+          <li>1 Tag</li>
+          <li>lernen Sie die Kunst des Grillens</li>
+        </ul>
+        <button>Grillkurs</button>
+      </div>
+      <div class="grill-img">
+        <img src="img/fullfood.png" alt="Grillkurs" />
+      </div>
     </section>
-
     <div class="box3 center-container">
-        <div class="center-section">
-            <h2 class="dasfont1">Das Handwerk</h2>
-            <p class="allesfont1">alles über unsere Hausgemachte Produkte</p>
-            <p class="allesfont2">
-                Halt amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et
-                dolore<br> magna
-                99
-                Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation ullamco<br>
-                laboris nisi Sprechen Sie
-                deutsch aliquip ex ea commodo consequat.<br>
-                <br>
-                Wiener Schnitzel aute irure dolor in Guten Tag mollit anim Stuttgart.<br>
-                <br>
-                id latine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm<br>
-                expetenda nam an, his
-                ei Reise euismod assentior
-            </p>
-        </div>
-        <button>Das Handwerk</button>
+      <div class="center-section">
+        <h2 class="dasfont1">Das Handwerk</h2>
+        <p class="allesfont1">alles über unsere Hausgemachte Produkte</p>
+        <p class="allesfont2">
+          Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
+          Stuttgart ut labore et dolore<br />
+          magna 99 Luftballons Ut enim ad minim veniam, Turnbeutel nostrud
+          exercitation ullamco<br />
+          laboris nisi Sprechen Sie deutsch aliquip ex ea commodo consequat.<br />
+          <br />
+          Wiener Schnitzel aute irure dolor in Guten Tag mollit anim
+          Stuttgart.<br />
+          <br />
+          id latine indoctum complectitur HugoClub Mate mea meliore denique
+          nominavi id. Ohrwurm<br />
+          expetenda nam an, his ei Reise euismod assentior
+        </p>
+      </div>
+      <button>Das Handwerk</button>
     </div>
-
     <section class="divider-section">
-        <div class="section-divider">
-            <div class="section-divider__badge">
-                <img src="img/f2logo.svg" alt="Brand mark">
-            </div>
+      <div class="section-divider">
+        <div class="section-divider__badge">
+          <img src="img/f2logo.svg" alt="Brand mark" />
         </div>
+      </div>
     </section>
+  </body>
+  <script>
+    (function () {
+      // 1) Configure your three images
+      const slides = ["img/ember.svg", "img/food.png", "img/fullfood.png"];
 
-</body>
+      const hero = document.querySelector(".hero");
+      const prevBtn = document.querySelector(".hero__btn--prev");
+      const nextBtn = document.querySelector(".hero__btn--next");
+      const dotsWrap = document.querySelector(".hero__dots");
+      let i = 0;
+      let autoPlayInterval;
+
+      // 2) Build dots dynamically
+      const dots = slides.map((_, idx) => {
+        const b = document.createElement("button");
+        b.className = "hero__dot";
+        b.type = "button";
+        b.setAttribute("role", "tab");
+        b.setAttribute("aria-label", `Slide ${idx + 1}`);
+        b.addEventListener("click", () => {
+          go(idx);
+          resetAutoPlay();
+        });
+        dotsWrap.appendChild(b);
+        return b;
+      });
+
+      // 3) Helpers
+      function setBackground(src) {
+        hero.style.backgroundImage = `url("${src}")`;
+      }
+      function updateDots() {
+        dots.forEach((d, idx) =>
+          d.setAttribute("aria-pressed", String(idx === i))
+        );
+      }
+      function go(idx) {
+        i = (idx + slides.length) % slides.length;
+        setBackground(slides[i]);
+        updateDots();
+      }
+      function next() {
+        go(i + 1);
+      }
+      function prev() {
+        go(i - 1);
+      }
+
+      // 4) Wire up controls
+      nextBtn.addEventListener("click", () => {
+        next();
+        resetAutoPlay();
+      });
+      prevBtn.addEventListener("click", () => {
+        prev();
+        resetAutoPlay();
+      });
+
+      // Keyboard (left/right) when hero is focused
+      hero.tabIndex = 0;
+      hero.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") {
+          e.preventDefault();
+          next();
+          resetAutoPlay();
+        }
+        if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          prev();
+          resetAutoPlay();
+        }
+      });
+
+      // 5) Auto-play function
+      function startAutoPlay() {
+        autoPlayInterval = setInterval(next, 5000); // every 5 seconds
+      }
+      function resetAutoPlay() {
+        clearInterval(autoPlayInterval);
+        startAutoPlay();
+      }
+
+      // 6) Preload images
+      slides.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+
+      // 7) Init
+      go(0);
+      startAutoPlay();
+    })();
+  </script>
+  <script>
+  // --- place arrows flush with the dot group ---
+  (function () {
+    const hero     = document.querySelector(".hero");
+    const dotsWrap = document.querySelector(".hero__dots");
+    const prevBtn  = document.querySelector(".hero__btn--prev");
+    const nextBtn  = document.querySelector(".hero__btn--next");
+    const GAP = 16; // space between arrows and dots (px)
+
+    function positionArrows() {
+      const heroRect = hero.getBoundingClientRect();
+      const dotsRect = dotsWrap.getBoundingClientRect();
+
+      // place prev so its RIGHT edge sits GAP to the LEFT of the dots
+      const prevLeft = (dotsRect.left - heroRect.left) - GAP - prevBtn.offsetWidth;
+      // place next so its LEFT edge sits GAP to the RIGHT of the dots
+      const nextLeft = (dotsRect.right - heroRect.left) + GAP;
+
+      prevBtn.style.left = `${Math.round(prevLeft)}px`;
+      nextBtn.style.left = `${Math.round(nextLeft)}px`;
+      // keep same bottom as dots via CSS; no change needed here
+    }
+
+    // Recalculate on load/resizes (and when fonts/layout settle)
+    window.addEventListener("load", positionArrows);
+    window.addEventListener("resize", positionArrows);
+    if (window.ResizeObserver) {
+      new ResizeObserver(() => positionArrows()).observe(dotsWrap);
+    }
+    // If your code creates dots dynamically, call positionArrows()
+    // right after you finish appending them:
+    positionArrows();
+  })();
+</script>
+<script>
+  (function () {
+    const hero     = document.querySelector(".hero");
+    const dotsWrap = document.querySelector(".hero__dots");
+    const prevBtn  = document.querySelector(".hero__btn--prev");
+    const nextBtn  = document.querySelector(".hero__btn--next");
+    const GAP = 16; // space between arrows and the dots
+
+    function positionArrows() {
+      if (!hero || !dotsWrap || !prevBtn || !nextBtn) return;
+
+      const heroRect = hero.getBoundingClientRect();
+      const dotsRect = dotsWrap.getBoundingClientRect();
+
+      // Horizontal: sit snug to the dot group
+      const prevLeft = (dotsRect.left  - heroRect.left) - GAP - prevBtn.offsetWidth;
+      const nextLeft = (dotsRect.right - heroRect.left) + GAP;
+
+      // Vertical: center arrows to dots vertically
+      const top = (dotsRect.top - heroRect.top) + (dotsRect.height - prevBtn.offsetHeight) / 2;
+
+      prevBtn.style.left = `${Math.round(prevLeft)}px`;
+      nextBtn.style.left = `${Math.round(nextLeft)}px`;
+      prevBtn.style.top  = `${Math.round(top)}px`;
+      nextBtn.style.top  = `${Math.round(top)}px`;
+    }
+
+    window.addEventListener("load", positionArrows);
+    window.addEventListener("resize", positionArrows);
+    if (window.ResizeObserver) new ResizeObserver(positionArrows).observe(dotsWrap);
+
+    // Call this once right after you append the dots in your slider init, too:
+    positionArrows();
+  })();
+</script>
 
 </html>
